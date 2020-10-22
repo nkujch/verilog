@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Educator-yly\Desktop\verilog_exercises\rom_demo\prj\simulation\modelsim
+vpll_0_tb
+!i10b 1
+!s100 J_;fnO997>O?46KPODmOD3
+I5BgoCFX2o7ZF]382`zH8G1
+VkfeKSmjV9?ShJR1YJ`61K0
+Z1 dC:\Users\Educator-yly\Desktop\verilog_exercises\rom_demo\prj\simulation\modelsim
+w1603097457
+8C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v
+L0 24
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1603098691.436000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench|C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench -O0
+vpll_top
+IcnfKL?I4e0DMSXi[i33kb3
+V7z;2W5WV>2hSMi>n5FcQn2
+R1
+w1603097579
+8rom_demo_8_1200mv_85c_slow.vo
+From_demo_8_1200mv_85c_slow.vo
+L0 31
+R2
+r1
+31
+R3
+!i10b 1
+!s100 >IfBXJl0TljR_lLCdelHJ3
+!s85 0
+!s108 1603098690.905000
+!s107 rom_demo_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|rom_demo_8_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0

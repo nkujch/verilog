@@ -1,0 +1,64 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do rom_demo_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {rom_demo_8_1200mv_85c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_top
+# 
+# Top level modules:
+# 	pll_top
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench {C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_0_tb
+# 
+# Top level modules:
+# 	pll_0_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  pll_0_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps pll_0_tb 
+# Loading work.pll_0_tb
+# Loading work.pll_top
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from rom_demo_8_1200mv_85c_v_slow.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from rom_demo_8_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /pll_0_tb File: C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning : Input clock freq. is over VCO range. Cycloneive PLL may lose lock
+# Time: 23102  Instance: pll_0_tb.u0_pll_0.\u0_pll_0|altpll_component|auto_generated|pll1 
+#  Note : Cycloneive PLL was reset
+# Time: 62337  Instance: pll_0_tb.u0_pll_0.\u0_pll_0|altpll_component|auto_generated|pll1 
+#  Note : Cycloneive PLL locked to incoming clock
+# Time: 183102  Instance: pll_0_tb.u0_pll_0.\u0_pll_0|altpll_component|auto_generated|pll1 
+# Break in Module pll_0_tb at C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v line 68
+# Simulation Breakpoint: Break in Module pll_0_tb at C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v line 68
+# MACRO ./rom_demo_run_msim_gate_verilog.do PAUSED at line 17

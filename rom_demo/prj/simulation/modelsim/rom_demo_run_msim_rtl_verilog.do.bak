@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl {C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl/rom_top.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip {C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip/rom_1port.v}
+

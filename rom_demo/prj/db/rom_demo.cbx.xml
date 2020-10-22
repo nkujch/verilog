@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="rom_demo">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pll_top|pll_0:u0_pll_0|altpll:altpll_component" CBX_FILE_NAME="pll_0_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

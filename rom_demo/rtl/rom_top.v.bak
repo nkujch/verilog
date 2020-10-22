@@ -1,0 +1,75 @@
+/************************************************************
+* Filename  :  "test.v"
+* Author    :  yang jiangtao
+* Description  :  Functional test module
+* Called by :  None
+* Last modified: 2020/10/15/16:38
+* Version  : 0.01
+* Info :        
+*   version author  desc
+*   0.01    yjt     create file
+*   
+* Email    :  
+* Company  :  
+* Copyright(c) 2019, xxxx Technology Inc, All right reserved
+***************************************************************/
+
+/*timescale*/
+`timescale 1ns/1ns
+
+/*define*/
+
+
+/*module*/
+module test
+    #(  parameter COUNT=13,
+        parameter DW=3)
+    (
+        input iws_clk,
+        input iws_reset_n,
+        
+        output [7:0] owv_q,
+        output ows_q7,
+        
+        output ows_c0,
+        output ows_c1,
+        output ows_c2,
+        output ows_c3,
+        output ows_locked
+    );
+
+    //step-1: Internal reg or wire
+    reg [7:0] rv_cnt;
+   
+    //step-2: Main logic
+    //2-1: Counter_8bits
+    always @(posedge iws_clk or negedge iws_reset_n) begin
+        if(!iws_reset_n)
+            rv_cnt <= 8'd0;
+    	else if(rv_cnt==COUNT)
+            rv_cnt <= 8'd0;
+        else
+            rv_cnt <= rv_cnt + 1'b1;
+    end
+    //2-2: generate clock
+    sys_pll u_sys_pll(
+	.areset(),
+	.inclk0(iws_clk),
+	.c0(ows_c0),
+	.c1(ows_c1),
+	.c2(ows_c2),
+	.c3(ows_c3),
+	.locked(ows_locked));
+
+    //step-3: Module output   
+    //3-1: Output owv_q
+    genvar i;
+    generate
+        for(i=0; i<8; i=i+1) begin: for_block_1
+            assign owv_q[i] = rv_cnt[i];
+        end
+    endgenerate
+    //3-2: Output ows_q7
+    assign ows_q7 = rv_cnt[7];
+    
+endmodule

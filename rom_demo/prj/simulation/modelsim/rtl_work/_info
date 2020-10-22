@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Educator-yly\Desktop\verilog_exercises\rom_demo\prj\simulation\modelsim
+vpll_0
+I`zYzWLn?a`TOWoY34UXZF3
+Vld<4D^FzQ<LOhYkel>LNf0
+Z1 dC:\Users\Educator-yly\Desktop\verilog_exercises\rom_demo\prj\simulation\modelsim
+w1603095276
+8C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip/pll_0.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip/pll_0.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 _[`?1cYegARjGBnicn11a2
+!s85 0
+!s108 1603097480.256000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip/pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip|C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip/pll_0.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/ip -O0
+vpll_0_altpll
+I6hTn8a>?QGWU>5KThheLB2
+V8L`;b0`iI]OVAg8FLQ=2_0
+R1
+w1603097042
+8C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db/pll_0_altpll.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db/pll_0_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!i10b 1
+!s100 E8X_5:8Wh8kaSF7GFCa6W0
+!s85 0
+!s108 1603097480.752000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db/pll_0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db|C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db/pll_0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/db -O0
+vpll_0_tb
+!i10b 1
+!s100 J_;fnO997>O?46KPODmOD3
+I5BgoCFX2o7ZF]382`zH8G1
+VkfeKSmjV9?ShJR1YJ`61K0
+R1
+w1603097457
+8C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v
+L0 24
+R2
+r1
+!s85 0
+31
+!s108 1603097481.000000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench|C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench/pll_0_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/prj/../verification/testbench -O0
+vpll_top
+IQK<nKI?eOf;CRX1jM6_je3
+V7z;2W5WV>2hSMi>n5FcQn2
+R1
+w1603097019
+8C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl/pll_top.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl/pll_top.v
+L0 2
+R2
+r1
+31
+R3
+!i10b 1
+!s100 >3L99az2R2]h]C=E`ejZC3
+!s85 0
+!s108 1603097480.511000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl/pll_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl|C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl/pll_top.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/rom_demo/rtl -O0

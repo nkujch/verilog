@@ -1,0 +1,105 @@
+/************************************************************
+* Filename  :  "rom_top_tb.v"
+* Author    :  yang jiangtao
+* Description  :  testbench of "rom_top.v"
+* Called by :  None
+* Last modified: 2020/10/18/15:26
+* Version  : 0.01
+* Info :        
+*   version author  desc
+*   0.01    yjt     create file
+*   
+* Email    :  
+* Company  :  
+* Copyright(c) 2019, xxxx Technology Inc, All right reserved
+***************************************************************/
+
+/*timescale*/
+`timescale 1ns/1ns
+
+/*define*/
+`define clk_period 20 //clock 50MHz
+
+/*module*/
+module sys_pll_tb;	
+    //step-1: define input and output signals
+    //1-1: excitation signals
+    reg rs_clk_50M;
+    reg rs_reset_n;
+    //1-2: global observation signals
+
+    
+    //step-2: module instantiation
+    //2-1: instance of "sys_pll.v"
+    //2-1-1: observation signals of "sys_pll.v"
+    wire ws_clk0;
+    wire ws_clk1;
+    wire ws_clk2;
+    wire ws_clk3;
+    wire ws_locked;
+    //2-1-2: instantiate "sys_pll.v"
+    test u0
+    (
+        .iws_clk(rs_clk_50M),
+        .iws_reset_n(rs_reset_n),
+ 
+        .ows_c0(ws_clk0),
+        .ows_c1(ws_clk1),
+        .ows_c2(ws_clk2),
+        .ows_c3(ws_clk3),
+        .ows_locked(ws_locked)
+    );
+    //2-2: instance_0 of "test.v"
+    //2-2-1: observation signals of u_test_0
+    wire [7:0] wv_u0_q;
+    wire ws_u0_q7;
+    //2-2-2: instantiate "test.v"
+    test #(.COUNT(9))
+    u_test_0
+    (
+        .iws_clk(rs_clk_50M),
+        .iws_reset_n(rs_reset_n),
+        
+        .owv_q(wv_u0_q),
+        .ows_q7(ws_u0_q7)
+    );
+    //2-3: instance_1 of "test.v"
+    //2-2-1: observation signals of u_test_0
+    wire [7:0] wv_u1_q;
+    wire ws_u1_q7;
+    //2-2-2: instantiate "test.v"
+    test u_test_1
+    (
+        .iws_clk(rs_clk_50M),
+        .iws_reset_n(rs_reset_n),
+        
+        .owv_q(wv_u1_q),
+        .ows_q7(ws_u1_q7)
+    );    
+    
+    
+    //step-3: generate excitation
+    //3-1: generate clock signal
+    initial rs_clk_50M = 1'b1;
+    always #(`clk_period/2) rs_clk_50M <= ~rs_clk_50M;
+    //3-2: generate reset signal
+    initial begin
+        rs_reset_n = 1'b1;
+        
+        #(`clk_period*3); 
+        rs_reset_n = 1'b0;
+        
+        #(`clk_period); 
+        rs_reset_n = 1'b1;               
+    end   
+    //3-3: stop simulation
+    initial begin
+        #(`clk_period*1000);
+        $stop;
+    end
+
+    //step-4: observe error
+
+    
+
+endmodule
