@@ -1,0 +1,37 @@
+module piso_sr_8(
+	clk,
+	reset_n,
+	data_byte,
+	data_serial);
+	//step-1: IO ports
+	//input ports
+	input clk;
+	input reset_n;
+	input [7:0] data_byte;
+	//output ports
+	output data_serial;
+	//reg or wire
+	reg [7:0] shift_reg;
+	reg [2:0] count;
+	
+	//step-2: logic
+	//counter
+	always @ (posedge clk or negedge reset_n) begin
+		if(!reset_n)
+			count <= 3'd0;
+	end
+	
+	//shift register
+	always @ (posedge clk or negedge reset_n) begin
+		if(!reset_n)
+			shift_reg <= 8'h00;
+		else if(shift_reg==8'h00)
+			shift_reg <= data_byte;
+		else
+			shift_reg <= {shift_reg[6:0], 1'b0};
+	end
+	
+	//step-3: output
+	assign data_serial = shift_reg[7];
+	
+endmodule

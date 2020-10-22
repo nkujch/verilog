@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Educator-yly\Desktop\verilog_exercises\uart_tx\prj\simulation\modelsim
+vuart_tx_tb
+!i10b 1
+!s100 Cz?2Y=VYdTBJRaBgIb9GE0
+IOk^bI<n8alV0`HKClH5Kk3
+V^GOQ@RT<gh1ENehT@lDmY3
+Z1 dC:\Users\Educator-yly\Desktop\verilog_exercises\uart_tx\prj\simulation\modelsim
+w1602236924
+8C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/uart_tx_tb.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/uart_tx_tb.v
+L0 16
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1602289563.981000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/uart_tx_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench|C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/uart_tx_tb.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench -O0
+vuart_tx_top
+I15SDzWlDHOXR0E?1@oZD@2
+VmjD0JJ1OeGTFYT:@9D;ZD0
+R1
+w1602289528
+8uart_tx_8_1200mv_85c_slow.vo
+Fuart_tx_8_1200mv_85c_slow.vo
+L0 31
+R2
+r1
+31
+R3
+!i10b 1
+!s100 5co<imJHY3j<LFV8a[<H_1
+!s85 0
+!s108 1602289563.802000
+!s107 uart_tx_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|uart_tx_8_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0

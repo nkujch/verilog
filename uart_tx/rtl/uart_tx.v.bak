@@ -1,0 +1,36 @@
+module uart_tx(
+	clk,
+	reset_n,
+	tx_en,
+	baud_set,
+	data_byte,
+	tx,
+	tx_done,
+	uart_state);
+	//step-1: IO ports
+	//input ports
+	input clk;  //系统时钟50MHz
+	input reset_n;
+	input tx_en;
+	input [2:0] baud_set;
+	input [7:0] data_byte;
+	//output ports
+	output tx;
+	output tx_done;    // 信号发送完毕信号
+	output uart_state; // 当发送数据时uart_state=1,发送忙信号
+	
+	//step-2: main logic
+	//baud_set
+	always @ (baud_set) begin
+		case(baud_set)
+			3'b000: 
+		
+		endcase
+	end
+	
+	//step-3: output
+
+
+endmodule
+
+

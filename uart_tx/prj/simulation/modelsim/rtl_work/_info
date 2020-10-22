@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Educator-yly\Desktop\verilog_exercises\uart_tx\prj\simulation\modelsim
+vsys_pll
+I;_^oIRPVJM@8JPTEK[:UR3
+V;3d06fGU:H?]8Oo0LNLkZ0
+Z1 dC:\Users\Educator-yly\Desktop\verilog_exercises\uart_tx\prj\simulation\modelsim
+w1602744828
+8C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip/sys_pll.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip/sys_pll.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 J<KbNboJl[USU7VDBP>hZ1
+!s85 0
+!s108 1602749971.585000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip/sys_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip|C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip/sys_pll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/ip -O0
+vsys_pll_altpll
+IN?@agagLZAMoJ?8n0<m^j0
+VXG>Pka3SoB]LWFKVk5n@B1
+R1
+w1602749833
+8C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db/sys_pll_altpll.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db/sys_pll_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!i10b 1
+!s100 F0E0RZc?P^RUGmVZd6eXm3
+!s85 0
+!s108 1602749971.871000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db/sys_pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db|C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db/sys_pll_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/db -O0
+vsys_pll_tb_1
+!i10b 1
+!s100 d68^fF^8<DT>:J7]k6MFj2
+I]J[0U;2^aLo@gnV4E:V4N2
+V?BZVE6EdGBT:TC<PA>kHd1
+R1
+w1602749827
+8C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/sys_pll_tb.v
+FC:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/sys_pll_tb.v
+L0 24
+R2
+r1
+!s85 0
+31
+!s108 1602749972.057000
+!s107 C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/sys_pll_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench|C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench/sys_pll_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/Educator-yly/Desktop/verilog_exercises/uart_tx/prj/../testbench -O0

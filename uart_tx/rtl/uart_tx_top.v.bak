@@ -1,0 +1,38 @@
+/************************************************************
+* Filename ﹕ "uart_tx_top.v"
+* Author ﹕yang jiangtao
+* Description ﹕top module of "uart_tx"
+* Called by ﹕" .v"
+* Revision History ﹕2020.10.9-10:29
+* Revision 1.0
+* Email ﹕ 
+* Company ﹕ 
+* Copyright(c) 2019, xxxx Technology Inc, All right reserved
+***************************************************************/
+
+`timescale 1ns/1ns
+module uart_tx_top(
+    clk,
+	reset_n,
+	send_en,
+	baud_set,
+	data_byte,
+	tx,
+	send_done,
+	uart_state);
+    //step-1: IO ports
+    //input ports
+    input clk;
+    input reset_n;
+    input send_en;
+    input [2:0] baud_set;
+    //output ports
+    
+    //step-2: logic
+    
+    
+    //step-3: output
+    
+
+
+endmodule

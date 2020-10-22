@@ -1,0 +1,13 @@
+	component soft_core_jtag_io is
+		generic (
+			ENABLE_JTAG_IO_SELECTION : integer := 0
+		);
+		port (
+			tms         : in  std_logic := 'X'; -- tms
+			tdi         : in  std_logic := 'X'; -- tdi
+			tdo         : out std_logic;        -- tdo
+			tck         : in  std_logic := 'X'; -- clk
+			select_this : in  std_logic := 'X'  -- select_this
+		);
+	end component soft_core_jtag_io;
+

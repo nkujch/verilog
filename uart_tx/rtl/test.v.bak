@@ -1,0 +1,40 @@
+/************************************************************
+* Filename ﹕ "test.v"
+* Author ﹕yang jiangtao
+* Description ﹕module for test function
+* Called by ﹕None
+* Revision History ﹕2020.10.9-10:46
+* Revision 1.0
+* Email ﹕ 
+* Company ﹕ 
+* Copyright(c) 2019, xxxx Technology Inc, All right reserved
+***************************************************************/
+
+`timescale 1ns/1ns
+module test(
+    );
+    //step-1: IO ports
+    //input ports
+    input clk;
+    input reset_n;
+    input send_en;
+    input [2:0] baud_set;
+    input [7:0] data_byte;
+    //output ports
+    output tx;
+    output send_done;
+    output uart_state;
+    
+    //step-2: logic
+    //2-1: instantiation of "m_clk_baud"
+    wire clk_baud
+    m_clk_baud u_clk_baud(
+        );
+    
+    //2-2: instantiation of "m_uart_tx_sm"
+    
+    //step-3: output    
+    
+    
+
+endmodule

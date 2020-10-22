@@ -1,0 +1,15 @@
+
+State Machine - |test|uart_tx_sm:u_uart_tx_sm|s_current
+Name s_current.s_send_stop s_current.s_send_parity s_current.s_send_data_7 s_current.s_send_data_6 s_current.s_send_data_5 s_current.s_send_data_4 s_current.s_send_data_3 s_current.s_send_data_2 s_current.s_send_data_1 s_current.s_send_data_0 s_current.s_send_start s_current.s_IDLE 
+s_current.s_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+s_current.s_send_start 0 0 0 0 0 0 0 0 0 0 1 1 
+s_current.s_send_data_0 0 0 0 0 0 0 0 0 0 1 0 1 
+s_current.s_send_data_1 0 0 0 0 0 0 0 0 1 0 0 1 
+s_current.s_send_data_2 0 0 0 0 0 0 0 1 0 0 0 1 
+s_current.s_send_data_3 0 0 0 0 0 0 1 0 0 0 0 1 
+s_current.s_send_data_4 0 0 0 0 0 1 0 0 0 0 0 1 
+s_current.s_send_data_5 0 0 0 0 1 0 0 0 0 0 0 1 
+s_current.s_send_data_6 0 0 0 1 0 0 0 0 0 0 0 1 
+s_current.s_send_data_7 0 0 1 0 0 0 0 0 0 0 0 1 
+s_current.s_send_parity 0 1 0 0 0 0 0 0 0 0 0 1 
+s_current.s_send_stop 1 0 0 0 0 0 0 0 0 0 0 1 

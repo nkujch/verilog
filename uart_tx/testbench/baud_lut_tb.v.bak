@@ -1,0 +1,33 @@
+`timescale 1ns/1ps
+`define clk_period 20
+
+module baud_lut_tb;	
+	//step-1: IO signals
+	//stimulus signals
+	reg clk_50M;
+	
+	
+	//observed signals
+	
+	
+	//step-2: instantiation
+	baud_lut(
+	clk,
+	reset_n,
+	ena,
+	baud_set,
+	clk_baud);
+	
+	//step-3: generating stimulus
+	//3-1: clock
+	initial clk_50M = 0;
+	always #(`clk_period/2) clk_50M = ~clk_50M;
+	//3-2: 
+	
+	
+	//step-4: check
+	
+	
+
+
+endmodule

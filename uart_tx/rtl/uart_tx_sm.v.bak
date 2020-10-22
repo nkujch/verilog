@@ -1,0 +1,54 @@
+/************************************************************
+* Filename ﹕ "uart_tx_sm.v"
+* Author ﹕yang jiangtao
+* Description ﹕state machine of "uart_tx"
+* Called by ﹕None
+* Revision History ﹕2020.10.9-9:36
+* Revision 1.0
+* Email ﹕ 
+* Company ﹕ 
+* Copyright(c) 2019, xxxx Technology Inc, All right reserved
+***************************************************************/
+
+`timescale 1ns/1ns
+module uart_tx_sm( 
+    clk,
+    reset_n,
+    parity_bits,
+    data_in,
+    serial_out);
+    //step-1: state code
+    //one-hot code
+    localparam IDLE   = 5'b00_001;
+    localparam start  = 5'b00_010;
+    localparam data   = 5'b00_100;
+    localparam parity = 5'b01_000;
+    localparam stop   = 5'b10_000;
+    //current and next
+    reg [:0] current;
+    reg [:0] next;
+    
+    //step-2: state transition
+    always @(*) begin
+        case(current)
+            IDLE: if()
+            start:
+            data:
+            parity:
+            stop:
+            default: 
+        endcase
+    end
+    
+    //step-3: state flip-flop
+    always @(posedge clk or negedge reset_n) begin
+        if(!reset_n)
+            current <= IDLE;
+        else
+            current <= next;
+    end
+    
+    //step-4: output
+    
+
+endmodule
